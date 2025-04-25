@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: white;
+    color:#333;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding:0 2rem;
+    overflow: hidden;
+    text-align: center;
+}
+.restart-btn{
+    display:none;
+    background:rgb(222, 217, 217);
+    color:#333;
+    padding: 0.4em 1.3rem;
+    font-size:1rem;
+    cursor:pointer;
+    outline: none;
+    border:none
+}
+.restart-btn:hover{
+    background: blue;
+    color:#fff
+}
+.score{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    color:white
+}
+.score p:first-child{
+    background-color: blue;
+}
+.score p:last-child{
+    background-color:black;
+}
+.choices{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+}
+.choice{
+    color:blue;
+}
+.choice:hover{
+    color:pink
+}
