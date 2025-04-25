@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors!!</title>
     <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Rock Paper Scissors!</h1>
-      <button class="restart-btn">Restart Game</button>
-      <div class="score">
-        <p>Player:0</p>
-        <p>Computer:0</p>
+  <section class="game">
+    <!--Title-->
+    <h1> Rock Paper Scissors</h1>
+    <!--display score of player and computer-->
+    <div class="score">
+      <div class="playScore">
+        <h2>Player</h2>
+        <p class="p-count">0</p>
       </div>
-    </header>
-    <h2>Make your selection</h2>
-    <div class="choices">
-      <button class="choice">rock</button>
-      <button class="choice" >paper</button>
-      <button class="choice">scissors</button>
-      
+      <div class="computerScore">
+        <h2>computer</h2>
+        <p class="c-count">0</p>
+      </div>
     </div>
-  </div>
+    <div class="move">Choose your Move</div>
+    <div class="movesLeft">Moves left:5</div>
+    <!--options available for player to choose-->
+    <div class="options">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+    <!--final result-->
+    <div>
+      <p class="result">Result:</p>
+      <button class="reload">Reload</button>
+    </div>
+    
+  </section>
+
+  
   
   
   
