@@ -1,51 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors!!</title>
-    <link rel="stylesheet" href="style.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game</title>
 </head>
 <body>
-  <section class="game">
-    <!--Title-->
-    <h1> Rock Paper Scissors</h1>
-    <!--display score of player and computer-->
-    <div class="score">
-      <div class="playScore">
-        <h2>Player</h2>
-        <p class="p-count">0</p>
-      </div>
-      <div class="computerScore">
-        <h2>computer</h2>
-        <p class="c-count">0</p>
-      </div>
-    </div>
-    <div class="move">Choose your Move</div>
-    <div class="movesLeft">Moves left:5</div>
-    <!--options available for player to choose-->
-    <div class="options">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
-    </div>
-    <!--final result-->
-    <div>
-      <p class="result">Result:</p>
-      <button class="reload">Reload</button>
-    </div>
-    
-  </section>
-
-  
-  
-  
-  
-  
-
-
-
-  <script src="script.js"></script>   
+  <h1>Rock-Papper-Scissors</h1>
+  <div id="choices">
+    <button onclick="playGame('rock')">👊</button>
+    <button onclick="playGame('paper')">✌️</button>
+    <button onclick="playGame('scissors')">✋</button>
+  </div>
+  <div id="palyerDisplay">Player:</div>
+  <div id="computerDisplay">Computer:</div>
+  <div id="result">Result:</div>
 </body>
 </html>
